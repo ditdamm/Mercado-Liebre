@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    
+}
+
+body{
+    display: block;
+    background-color: #ebebeb;
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+header{
+    background-color: #EAC926;
+    padding: 15px;
+}
+
+.header-mobile{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logo{
+    width: 50%;
+    padding: 20px;
+}
+
+.search-bar{
+    color: #666;
+    width: 50%;
+    position: relative;
+}
+
+.search-bar input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.search-bar button{
+    background-color: #FFF;
+    width: 40px;
+    height: 36px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 12px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    outline: none;
+}
+
+.texto{
+    text-align: center;
+    margin: 10px 0;
+}
+
+header ul{
+    list-style: none;
+    padding: 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: #222;
+}
+
+.site, .login-bar{
+    display: none;
+}
+
+.burger-menu{
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.burger-menu i{
+    background-color: #03264C;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+form{
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    color: #666;
+}
+
+form h1{
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 25px;
+}
+
+form div{
+    margin: 30px 0;
+}
+
+label{
+    margin: 5px;
+    color: #666;
+}
+
+form input{
+    width: 100%;
+    height: 20px;
+    border: none;
+    border-bottom: solid 1px #666 ;
+    margin: auto;
+    margin: 5px 0;
+}
+
+input.fecha{
+    padding: 10px;
+}
+
+input.radio{
+    margin-right: -40%;
+    margin-left: -35%;
+    margin-top: 12px;
+}
+
+.category input{
+    margin-right: -39%;
+    margin-left: -33%;
+    margin-top: 12px;
+}
+.category .checkbox{
+    margin: 10px 0;
+}
+
+.button .enviar, .button .borrar{
+    border: solid 1px #666;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.enviar a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+footer{
+    color: #666;
+    
+}
+
+footer section{
+    text-align: center;
+    margin: 55px 40px;
+}
+
+footer section i{
+    font-size: 2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+
+footer h2{
+    font-size: 14px;
+}
+
+footer h3{
+    font-size: 12px
+}
+
+.copyright{
+    margin: 20px;
+}
+
+
+
+@media (min-width: 361px){
+    header{
+        padding: 15px;
+        padding-bottom: 0;
+    }
+    .header-top-bar{
+        width: 100%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center; 
+    }
+    .header-mobile{
+        width: 66%
+    }
+    .search-bar input{
+        width: 95%;
+    }
+    .texto{
+        width: 33%;
+        padding-left: 15px;
+    }
+    .site, .login-bar{
+        display: block;
+    }
+    header .navbar{
+        display: flex;
+        width: 100%;
+        margin-top: 0px;
+            
+        justify-content: space-between;
+    }
+    header .navbar ul{
+        display: flex;
+        padding: 0%;
+        padding-bottom: 10px;
+    }
+    header .navbar li{
+        margin: 5px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    form{
+        width: 70%;
+    }
+    footer{
+        background-color: #FFF;
+        margin-top: 40px;
+        padding-top: 1px;
+    }
+}
+
+@media (min-width: 769px){
+    .header-top-bar{
+        width: 100%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center; 
+    }
+    .header-mobile{
+        width: 66%
+    }
+    .search-bar input{
+        width: 95%;
+    }
+    .texto{
+        width: 33%;
+        padding-left: 15px;
+        font-size: 17px;
+    }
+    .site, .login-bar{
+        display: block;
+    }
+    header .navbar{
+        display: flex;
+        width: 100%;
+        margin-top: 0px;
+            
+        justify-content: space-between;
+    }
+    header .navbar ul{
+        display: flex;
+        padding: 10px;
+    }
+        
+    header .navbar li{
+        margin: 5px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    form{
+        width: 50%;
+    }
+    footer{
+        background-color: #FFF;
+        margin-top: 40px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    footer section{
+        width: 33%;
+        margin: 0;
+        padding: 50px 20px;
+    }
+    footer section i{
+        transition: color 1s;
+    }
+    footer section i:hover{
+        color: #c069c8;
+    }
+    .copyright{
+        margin: 10px;
+    }
+}
